@@ -19,3 +19,5 @@ RUN mkdir -p /usr/local/gcloud \
 
 # Adding the package path to local
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
+
+RUN git clone https://github.com/google-research/language.git
