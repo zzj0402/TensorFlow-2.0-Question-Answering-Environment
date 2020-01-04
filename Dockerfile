@@ -4,7 +4,7 @@ ENV TZ=Pacific/Auckland
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 
-RUN apt-get install -y git-all git-lfs vim
+RUN apt-get install -y git-all git-lfs
 RUN git lfs install
 
 RUN pip install kaggle --upgrade
@@ -21,5 +21,7 @@ RUN mkdir -p /usr/local/gcloud \
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
 RUN git clone https://github.com/google-research/language.git
+
+RUN apt-get install -y vim
 
 COPY . .
