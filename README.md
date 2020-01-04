@@ -2,4 +2,8 @@
 
 ## Mount Dataset
 
-`docker run -v ~/NaturalQuestionsData:/mnt/data -it tf2-nq-env bash`
+`docker run -v ~/NaturalQuestionsData:/mnt/data -it tensorflow-2.0-question-answering-environment bash`
+
+## Install gsuti
+
+https://cloud.google.com/storage/docs/gsutil_install
