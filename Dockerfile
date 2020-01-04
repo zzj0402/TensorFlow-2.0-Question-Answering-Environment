@@ -1,5 +1,7 @@
 FROM tensorflow/tensorflow:latest-gpu
-COPY . .
+ENV TZ=Pacific/Auckland
 RUN apt-get update
-RUN apt-get install git-all git-lfs
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+COPY . .
+RUN apt-get install -y git-all git-lfs
 RUN git lfs install
