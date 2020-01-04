@@ -21,3 +21,5 @@ RUN mkdir -p /usr/local/gcloud \
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
 RUN git clone https://github.com/google-research/language.git
+
+COPY . .
