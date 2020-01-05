@@ -2,7 +2,7 @@
 
 ## Mount Dataset
 
-`docker run -v ~/NaturalQuestionsData:/mnt/data -it tensorflow-2.0-question-answering-environment bash`
+`docker run -v ~/NaturalQuestionsData:/mnt/data -it zzj0402/tensorflow-2.0-question-answering-environment bash`
 
 ## Install gsuti
 
