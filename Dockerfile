@@ -20,8 +20,14 @@ RUN mkdir -p /usr/local/gcloud \
 # Adding the package path to local
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 
+RUN apt-get install -y vim
+
+WORKDIR /root/
+
 RUN git clone https://github.com/google-research/language.git
 
-RUN apt-get install -y vim
+RUN git clone https://github.com/tensorflow/tensorflow.git
+
+RUN git clone https://github.com/google-research/ALBERT.git
 
 COPY . .
